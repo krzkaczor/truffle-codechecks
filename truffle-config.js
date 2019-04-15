@@ -1,5 +1,10 @@
 module.exports = {
-  // Uncommenting the defaults below 
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 200,
+    },
+  },
   // provides for an easier quick-start with Ganache.
   // You can also follow this format for other networks;
   // see <http://truffleframework.com/docs/advanced/configuration>
