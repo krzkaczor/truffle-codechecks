@@ -6,6 +6,7 @@ jobs:
     working_directory: /home/circleci/app
     steps:
       - checkout
+      - run: "sudo apt-get install -y graphviz"
 
       - restore_cache:
           key: v1-dep-{{ checksum "yarn.lock" }}
