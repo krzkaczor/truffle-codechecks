@@ -49,7 +49,7 @@ async function trackGas() {
     longDescription: `
 | Name | Gas | Diff | Cost | Block Limit % |
 |:----:|:---:|:----:|:----:|:-------------:|
-${report.map(r => `| ${r.name} | ${r.gas} | ${r.diff} | ${r.cost} | ${r.blockLimit} |`)}
+${report.map(r => `| ${r.name} | ${r.gas} | ${r.diff} | ${r.cost} | ${r.blockLimit} |`).join("\n")}
     `,
   });
 }
