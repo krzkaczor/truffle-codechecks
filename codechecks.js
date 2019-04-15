@@ -57,7 +57,7 @@ ${report.map(r => `| ${r.name} | ${r.gas} | ${r.diff} | ${r.cost} | ${r.blockLim
 async function graphContracts() {
   await execa.shell("mkdir -p ./graphs");
   const output = await execa.shell(
-    "./node_modules/.bin/surya graph contracts/MetaCoin.sol | dot -Tpng > graphs/contract.png",
+    "./node_modules/.bin/surya graph contracts/ERC20Basic.sol | dot -Tpng > graphs/contract.png",
   );
   if (output.stderr) {
     throw new Error(output.stderr);
