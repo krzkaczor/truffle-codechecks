@@ -21,6 +21,7 @@ contract MetaCoin {
 		balances[msg.sender] -= amount;
 		balances[receiver] += amount;
 		emit Transfer(msg.sender, receiver, amount);
+		emit Transfer(msg.sender, receiver, amount);
 		return true;
 	}
 

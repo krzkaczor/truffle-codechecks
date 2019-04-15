@@ -9,6 +9,8 @@
   "devDependencies": {
     "@codechecks/client": "^0.0.56",
     "ethereumjs-units": "^0.2.0",
+    "execa": "^1.0.0",
+    "surya": "^0.2.11",
     "truffle": "^5.0.12"
   },
   "dependencies": {
