@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "eth-gas-reporter": "git+https://github.com/cgewecke/eth-gas-reporter.git#next",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   }
 }
